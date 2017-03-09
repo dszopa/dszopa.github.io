@@ -1,0 +1,83 @@
+/* Google Material Design Colors - WIP */
+/* - Red - */
+.g-red-50-text {
+  color: #FFEBEE;
+}
+
+.g-red-50-bg {
+  background-color: #FFEBEE;
+}
+
+.g-red-100-text {
+  color: #FFCDD2;
+}
+
+.g-red-100-bg {
+  background-color: #FFCDD2;
+}
+
+.g-red-200-text {
+  color: #EF9A9A;
+}
+
+.g-red-200-bg {
+  background-color: #EF9A9A;
+}
+
+.g-red-300-text {
+  color: #E57373;
+}
+
+.g-red-300-bg {
+  background-color: #E57373;
+}
+
+.g-red-400-text {
+  color: #EF5350;
+}
+
+.g-red-400-bg {
+  background-color: #EF5350;
+}
+
+/* - Green - */
+.g-green-300-text {
+  color: #81C784;
+}
+
+.g-green-300-bg {
+  background-color: #81C784;
+}
+
+.g-green-400-text {
+  color: #66BB6A;
+}
+
+.g-green-400-bg {
+  background-color: #66BB6A;
+}
+
+/* - Grey - */
+.g-grey-600-text {
+  color: #757575;
+}
+
+.g-grey-600-bg {
+  background-color: #757575;
+}
+
+.g-grey-700-text {
+  color: #616161;
+}
+
+.g-grey-700-bg {
+  background-color: #616161;
+}
+
+.g-grey-800-text {
+  color: #424242;
+}
+
+.g-grey-800-bg {
+  background-color: #424242;
+}

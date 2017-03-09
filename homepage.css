@@ -1,47 +1,79 @@
-body{
-	text-align: center;
-	background: #00ECB9;
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
   font-family: sans-serif;
-  font-weight: 100;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
-.colorchange {
-	-webkit-animation: colorchange 180s infinite;
-	animation: colorchange 180s infinite;
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
 }
 
-.pause-colorchange {
-	-webkit-animation-play-state: paused;
-	-moz-animation-play-state: paused;
-	-o-animation-play-state: paused;
-	animation-play-state: paused;
+/* HTML Elements */
+body {
+  font-family: sans-serif;
+  color: #424242; /* g-grey-800 */
 }
 
-@keyframes colorchange {
-	0%   {background: #00ECB9;} /* material green */
-	10%  {background: #F44336;} /* material orange */
-	30%  {background: #9C27B0;} /* material purple */
-	50%  {background: #00BCD4;} /* material cyan */
-	70%  {background: #FFC107;} /* material amber */
-	90%  {background: #9E9E9E;} /* material gray */
-	100% {background: #00ECB9;} /* material green */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
-@-webkit-keyframes colorchange /* Safari and Chrome */ {
-	0%   {background: #00ECB9;} /* material green */
-	10%  {background: #F44336;} /* material orange */
-	30%  {background: #9C27B0;} /* material purple */
-	50%  {background: #00BCD4;} /* material cyan */
-	70%  {background: #FFC107;} /* material amber */
-	90%  {background: #9E9E9E;} /* material gray */
-	100% {background: #00ECB9;} /* material green */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.1;
 }
 
-h1{
-  color: white;
-  font-weight: 100;
-  font-size: 40px;
-  margin: 40px 0px 20px;
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 2.1rem 0 1.68rem 0;
+}
+
+h2 {
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: 1.78rem 0 1.424rem 0;
+}
+
+h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.46rem 0 1.168rem 0;
+}
+
+h4 {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.14rem 0 0.912rem 0;
+}
+
+h5 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: 0.82rem 0 0.656rem 0;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 110%;
+  margin: 0.5rem 0 0.4rem 0;
 }
 
 label {
@@ -49,41 +81,20 @@ label {
   font-size: 16px;
 }
 
-#clockdiv{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
-  padding-bottom: 15px;
+a {
+  color: #C5504D; /* Secondary Red Text */
+  text-decoration: none;
+  font-size: 16px;
 }
 
-#clockdiv > form > div {
-	padding: 10px;
-	border-radius: 3px;
-	background: rgba(255,255,255, 0.3);
-	display: inline-block;
+a:hover {
+  color: #C5504D; /* Secondary Red Text */
+  text-decoration: underline;
 }
 
-#clockdiv > form > div > input {
-	background: rgba(255, 255, 255, 0.3);
-  color: white;
-  font-size: 40px;
-  border: none;
-  width: 45px;
-  border-radius: 5px;
-  padding: 10px;
-	text-align: center;
-}
-
-.smalltext{
-	padding-top: 5px;
-	font-size: 16px;
-}
-
+/* Custom Elements */
 .btn {
-  background-color: rgba(255,255,255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   color: white;
   border: none;
   font-size: 16px;
@@ -91,13 +102,200 @@ label {
   padding: 10px;
 }
 
-#options {
-	padding-bottom: 15px;
+/* Container CSS */
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
 }
 
-#options > div {
-  padding: 10px;
-	border-radius: 5px;
-  display: inline-block;
-  background-color: rgba(255,255,255, 0.3);
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container .row {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.container-fluid .row {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+/* Row CSS */
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row .col {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 0.75rem;
+  min-height: 1px;
+}
+
+/* Row Columns CSS */
+.row .col.s1 {
+  width: 8.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s2 {
+  width: 16.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s3 {
+  width: 25%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s4 {
+  width: 33.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s5 {
+  width: 41.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s6 {
+  width: 50%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s7 {
+  width: 58.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s8 {
+  width: 66.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s9 {
+  width: 75%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s10 {
+  width: 75%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s11 {
+  width: 83.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+.row .col.s12 {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+/* Utility Classes */
+/* - Colors - */
+.white-text {
+  color: white;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.primary-red-text {
+  color: #EE8582;
+}
+
+.primary-red-bg {
+  background-color: #EE8582;
+}
+
+.secondary-red-text {
+  color: #C5504D;
+}
+
+.secondary-red-bg {
+  background-color: #C5504D;
+}
+
+.tertiary-red-text {
+  color: #A02B28;
+}
+
+.tertiary-red-bg {
+  background-color: #A02B28;
+}
+
+/* - Text Alignment - */
+.inner-text-center {
+  text-align: center;
+}
+
+.inner-text-right {
+  text-align: right;
+}
+
+.inner-text-left {
+  text-align: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+/* - Padding/Margin - */
+.no-margin-bottom {
+  margin-bottom: 0px;
 }
