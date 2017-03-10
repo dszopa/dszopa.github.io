@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     // Test to see if the 502 Bad Gateway is related to the script being ran locally.
-    httpGetAsync('http://services.runescape.com/m=hiscore/index_lite.ws?player=coachii', function(data) { console.log(data); });
+    httpGetAsync('//services.runescape.com/m=hiscore/index_lite.ws?player=coachii', function(data) { console.log(data); });
 });
