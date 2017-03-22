@@ -147,6 +147,7 @@ section {
 
 .container {
   position: relative;
+  /* Horizontally centers the container based on the width */
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
