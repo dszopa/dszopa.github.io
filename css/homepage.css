@@ -18,6 +18,7 @@ html {
  */
 body {
   margin: 0;
+  padding-top: 80px; /* For Header */
 }
 
 /* HTML Elements */
@@ -26,13 +27,14 @@ body {
   color: #424242; /* g-grey-800 */
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+/* Header */
+header h1, header h2, header h3, header h4,
+header h5, header h6 {
+  line-height: 60px; /* TODO - Figure out how this makes the header 80px */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1.1;
 }
 
@@ -43,37 +45,37 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1 {
   font-size: 4.2rem;
   line-height: 110%;
-  margin: 2.1rem 0 1.68rem 0;
+  margin: 10px 0;
 }
 
 h2 {
   font-size: 3.56rem;
   line-height: 110%;
-  margin: 1.78rem 0 1.424rem 0;
+  margin: 10px 0;
 }
 
 h3 {
   font-size: 2.92rem;
   line-height: 110%;
-  margin: 1.46rem 0 1.168rem 0;
+  margin: 10px 0;
 }
 
 h4 {
   font-size: 2.28rem;
   line-height: 110%;
-  margin: 1.14rem 0 0.912rem 0;
+  margin: 10px 0;
 }
 
 h5 {
   font-size: 1.64rem;
   line-height: 110%;
-  margin: 0.82rem 0 0.656rem 0;
+  margin: 10px 0;
 }
 
 h6 {
   font-size: 1rem;
   line-height: 110%;
-  margin: 0.5rem 0 0.4rem 0;
+  margin: 10px 0;
 }
 
 label {
@@ -90,6 +92,19 @@ a {
 a:hover {
   color: #C5504D; /* Secondary Red Text */
   text-decoration: underline;
+}
+
+header {
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+section {
+  padding-bottom: 10px;
 }
 
 /* Custom Elements */
@@ -139,7 +154,6 @@ a:hover {
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
 }
 
 .row:after {
@@ -243,11 +257,11 @@ a:hover {
 /* Utility Classes */
 /* - Colors - */
 .white-text {
-  color: white;
+  color: #f6f6f6;
 }
 
 .white-bg {
-  background-color: white;
+  background-color: #f6f6f6;
 }
 
 .primary-red-text {
@@ -298,4 +312,40 @@ a:hover {
 /* - Padding/Margin - */
 .no-margin-bottom {
   margin-bottom: 0px;
+}
+
+.xs-margin-bottom {
+  margin-bottom: 5px;
+}
+
+.s-margin-bottom {
+  margin-bottom: 10px;
+}
+
+.m-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.l-margin-bottom {
+  margin-bottom: 30px;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0px;
+}
+
+.xs-padding-bottom {
+  padding-bottom: 5px;
+}
+
+.s-padding-bottom {
+  padding-bottom: 10px;
+}
+
+.m-padding-bottom {
+  padding-bottom: 20px;
+}
+
+.l-padding-bottom {
+  padding-bottom: 30px;
 }
