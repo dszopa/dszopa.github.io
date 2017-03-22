@@ -79,7 +79,7 @@ h6 {
 }
 
 label {
-  color: white;
+  color: #f6f6f6;
   font-size: 16px;
 }
 
@@ -110,7 +110,7 @@ section {
 /* Custom Elements */
 .btn {
   background-color: rgba(255, 255, 255, 0.3);
-  color: white;
+  color: #f6f6f6;
   border: none;
   font-size: 16px;
   border-radius: 5px;
