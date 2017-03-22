@@ -67,31 +67,31 @@ h6 a {
 }
 
 h1 {
-  font-size: 4.2rem;
+  font-size: 2.5rem;
   line-height: 110%;
   margin: 10px 0;
 }
 
 h2 {
-  font-size: 3.56rem;
+  font-size: 2rem;
   line-height: 110%;
   margin: 10px 0;
 }
 
 h3 {
-  font-size: 2.92rem;
+  font-size: 1.75rem;
   line-height: 110%;
   margin: 10px 0;
 }
 
 h4 {
-  font-size: 2.28rem;
+  font-size: 1.5rem;
   line-height: 110%;
   margin: 10px 0;
 }
 
 h5 {
-  font-size: 1.64rem;
+  font-size: 1.25rem;
   line-height: 110%;
   margin: 10px 0;
 }
@@ -121,12 +121,12 @@ a:hover {
 }
 
 header {
-  text-align: center;
+  background-color: #66bb6a;
 }
 
 section {
-  text-align: center;
-  padding-bottom: 10px;
+  background-color: #424242;
+  margin-bottom: 10px;
 }
 
 
@@ -141,46 +141,55 @@ section {
   padding: 10px;
 }
 
-
-/* Container CSS */
-
-.container {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 90%;
-}
-
-@media only screen and (min-width: 601px) {
-  .container {
-    width: 85%;
-  }
-}
-
-@media only screen and (min-width: 993px) {
-  .container {
-    width: 70%;
-  }
-}
-
-.container-fluid {
-  width: 100%;
-}
-
-.container .row {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-}
-
-.container-fluid .row {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-}
-
-
 /* Grid CSS */
 
+/* TODO: Understand how this works - ref: https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-grid.css*/
 
-/* TODO: Understand how this works */
+.container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Container Widths */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+
+
+.container-fluid {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 .row {
   display: -webkit-box;
@@ -190,13 +199,20 @@ section {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  /* First and last row will not have a 'gutter' */
   margin-right: -15px;
   margin-left: -15px;
 }
 
+
 .col {
   position: relative;
   width: 100%;
+  /* Has the 15px padding to make up for the -15px margin on row 
+    It is also used to set 'gutters' in between rows*/
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 1px;
 }
 
 .col.s1 {
